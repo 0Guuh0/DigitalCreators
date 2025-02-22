@@ -1,0 +1,515 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFB6C1;
+  width: 100%;
+  height: 100%;
+}
+#root{
+  display: flex;
+  justify-content: center;
+}
+
+/* container */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.911);
+  width: 50%;
+  height: 100%;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+/* cabecalho */
+.cabecalho{
+  width: 100%;
+  font-family:'Poppins', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  margin-bottom: 2.5%;
+}
+.cabecalho_image{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 0px black;
+}
+.cabecalho_logo{
+  font-size: 1.5rem;
+}
+.cabecalho_text{
+  font-size: 1rem;
+}
+.cabecalho_btn{
+  font-size:1rem;
+  background-color: transparent;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  transition: width 2s, heigth 4s;
+}
+.cabecalho_btn:hover{
+  box-shadow: 0px 0px 4px 0px black;
+  cursor:pointer;
+}
+
+/* Logo */
+.logo{
+  display: flex;
+  flex-direction: column;
+  width: 80vh;
+  height: 30vh;
+  margin: 0 10%;
+}
+.logo_image{
+  width: 100%;
+  height: 30vh;
+}
+
+/* Template */
+.template{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:'Poppins', sans-serif;
+  color: white;
+  width: 100%;
+  height: 30%;
+  background-image: url('./assets/FundoRoxo.jpeg');
+}
+.template_text{
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Container_Lista */
+.lista{
+  font-family:'Poppins', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+/* Listas_Logo_Instagram_whatsapp */
+.lista_logo{
+  width: 25%;
+  height: 43.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lista_logo_image{
+  margin-top: 20px;
+  width: 25vh;
+  height: 25vh;
+}
+.lista_insta{
+  width: 25%;
+  height: 43.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lista_insta_image{
+  width: 25vh;
+  height: 25vh;
+}
+.lista_wpp{
+  width: 25%;
+  height: 43.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lista_wpp_image{
+  width: 25vh;
+  height: 25vh;
+}
+
+/* Textos_Listas */
+.lista_logo_text1{
+  font-size: 30px;
+  text-align: center;
+  color:#ee94a2;
+}
+.lista_logo_text2{
+  font-size: 18px;
+  text-align: center;
+}
+.lista_logo_text3{
+  font-size: 18px;
+  text-align: center;
+}
+
+/* TEXTO */
+.container_texto{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.texto{
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  margin-top: 60px;
+  padding: 0 30px;
+  color: #ee94a2;
+}
+.container_rodape{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33, 161, 161);
+  margin: 50px 0;
+}
+.rodape_texto{
+  color: aliceblue;
+  font-family: 'Poppins',sans-serif;
+  font-size: 20px;
+  padding: 20px 50px;
+}
+@media (min-width: 727px) and (max-width: 999px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFB6C1;
+    width: 100vh;
+    height: 100%;
+    margin: 0 23%;
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+
+  .cabecalho{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    margin-bottom: 2.5%;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .cabecalho_image{
+    width: 3rem;
+    height: 3rem;
+  }
+  .cabecalho_logo{
+    font-size: 1rem;
+  }
+  .cabecalho_text{
+    font-size: 1rem;
+  }
+  .cabecalho_btn{
+    font-size:1rem;
+    padding: 5px 0;
+    border-radius: 5px;
+  }
+
+  .logo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15%;
+    margin:0;
+  }
+  .logo_image{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .template{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'Poppins', sans-serif;
+    color: white;
+    width: 100%;
+    height: 30%;
+    background-image: url('./assets/FundoRoxo.jpeg');
+  }
+  .template_text{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .lista{
+    font-family:'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .lista_logo{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+  }
+  .lista_logo_image{
+    margin-top: 2rem;
+    width: 6rem;
+    height: 6rem;
+  }
+  .lista_insta{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .lista_insta_image{
+    margin: 30px 0;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .lista_wpp{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .lista_wpp_image{
+    margin: 30px 0;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  
+  .lista_logo_text1{
+    font-size: 1.5rem;
+    text-align: center;
+    color:#ee94a2;
+  }
+  .lista_logo_text2{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .lista_logo_text3{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .container_texto{
+    text-align: center;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .texto{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+    padding: 0;
+    color: #ee94a2;
+  }
+  .container_rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 161, 161);
+    margin: 3rem 0;
+  }
+  .rodape_texto{
+    color: aliceblue;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.3rem;
+    padding: 1.3rem 3rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 726px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFB6C1;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+
+  .cabecalho{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    margin-bottom: 2.5%;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .cabecalho_image{
+    width: 3rem;
+    height: 3rem;
+  }
+  .cabecalho_logo{
+    font-size: 1rem;
+  }
+  .cabecalho_text{
+    font-size: 1rem;
+  }
+  .cabecalho_btn{
+    font-size:1rem;
+    padding: 5px 0;
+    border-radius: 5px;
+  }
+
+  .logo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15%;
+    margin:0;
+  }
+  .logo_image{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .template{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'Poppins', sans-serif;
+    color: white;
+    width: 100%;
+    height: 30%;
+    background-image: url('./assets/FundoRoxo.jpeg');
+  }
+  .template_text{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .lista{
+    font-family:'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .lista_logo{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+  }
+  .lista_logo_image{
+    margin-top: 2rem;
+    width: 6rem;
+    height: 6rem;
+  }
+  .lista_insta{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .lista_insta_image{
+    margin: 30px 0;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .lista_wpp{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .lista_wpp_image{
+    margin: 30px 0;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  
+  .lista_logo_text1{
+    font-size: 1.5rem;
+    text-align: center;
+    color:#ee94a2;
+  }
+  .lista_logo_text2{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .lista_logo_text3{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .container_texto{
+    text-align: center;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .texto{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+    padding: 0;
+    color: #ee94a2;
+  }
+  .container_rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 161, 161);
+    margin: 3rem 0;
+  }
+  .rodape_texto{
+    color: aliceblue;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.3rem;
+    padding: 1.3rem 3rem;
+  }
+}
